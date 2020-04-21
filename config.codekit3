@@ -52,11 +52,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/section-3/hero 2.png": {
+	"/deploy/img/section-3/thresh.png": {
 		"ft": 32768,
 		"iS": 1204821,
 		"oA": 0,
-		"oAP": "/deploy/img/section-3/hero 2.png",
+		"oAP": "/deploy/img/section-3/thresh.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -126,12 +126,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/design/structure-tags.sketch": {
+	"/design/Dark Star.Sketch": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/design/structure-tags.sketch",
+		"oAP": "/design/Dark Star.Sketch",
 		"oF": 0
 		},
 	"/dev/footer.kit": {
