@@ -317,6 +317,11 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
 /* =============
     Typography
 ============= */
@@ -351,4 +356,35 @@ textarea {
    section-1
 ============= */
 #section-1 img {
+  width: 100%; }
+
+/* =============
+   section-2
+============= */
+#section-2 aside img {
+  width: 100%; }
+
+#section-2 section {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-2 ."; }
+  #section-2 section #section-2-content {
+    grid-area: section-2; }
+
+/* =============
+   section-3
+============= */
+#section-3 img {
+  width: 100%; }
+
+/* =============
+   section-4
+============= */
+#section-4 img {
+  width: 100%; }
+
+/* =============
+   section-5
+============= */
+#section-5 img {
   width: 100%; }
