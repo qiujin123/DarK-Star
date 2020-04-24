@@ -1,3 +1,13 @@
 /* =============
     Footer
 ============= */
+
+    footer{
+        display: grid;
+        grid-template-columns: 5% auto 5%;
+        grid-template-areas: ". footer .";
+
+        #footer-content{
+            grid-area: footer;
+        }
+    }

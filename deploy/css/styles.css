@@ -317,6 +317,12 @@ template {
 /* =============
     Base
 ============= */
+hr {
+  height: 3px;
+  color: #FABE69;
+  background-color: #FABE69;
+  border: none; }
+
 ul {
   padding: 0; }
   ul li {
@@ -352,6 +358,13 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-areas: ". footer ."; }
+  footer #footer-content {
+    grid-area: footer; }
+
 /* =============
    section-1
 ============= */
@@ -374,17 +387,39 @@ textarea {
 /* =============
    section-3
 ============= */
-#section-3 img {
+#section-3 aside img {
   width: 100%; }
+
+#section-3 section {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-3 ."; }
+  #section-3 section #section-3-content {
+    grid-area: section-3; }
 
 /* =============
    section-4
 ============= */
-#section-4 img {
-  width: 100%; }
+#section-4 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-4 ."; }
+  #section-4 ul {
+    grid-area: section-4;
+    display: grid;
+    gap: 20px; }
+    #section-4 ul li img {
+      width: 100%; }
 
 /* =============
    section-5
 ============= */
-#section-5 img {
+#section-5 aside img {
   width: 100%; }
+
+#section-5 section {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-5 ."; }
+  #section-5 section #section-5-content {
+    grid-area: section-5; }
