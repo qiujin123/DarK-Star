@@ -402,7 +402,6 @@ footer {
 ============= */
 #section-4 {
   display: grid;
-  grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-4 ."; }
   #section-4 ul {
     grid-area: section-4;
