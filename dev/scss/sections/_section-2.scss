@@ -4,19 +4,39 @@
 
 #section-2{
 
-   aside{
-      img{
-         width: 100%;
-      }
+   @include lg{
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-5-together .";
    }
 
-   section{
+   #section-2-together{
+      @include md{
+         grid-area: section-5-together;
          display: grid;
-         grid-template-columns: 15px auto 15px;
-         grid-template-areas: ". section-2 .";
+         grid-template-columns: 40% auto;
+      }
 
-         #section-2-content{
-            grid-area: section-2;
+      @include lg{
+         grid-area: section-5-together;
+         display: grid;
+         grid-template-columns: 40% auto;
+      }
+   
+      aside{
+         img{
+            width: 100%;
          }
+      }
+   
+      section{
+            display: grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas: ". section-2 .";
+   
+            #section-2-content{
+               grid-area: section-2;
+            }
+      }
    }
 }

@@ -3,12 +3,35 @@
 ============= */
 
 #section-5{
-    
-   aside{
-      img{
-         width: 100%;
-      }
+
+   @include lg{
+      display: grid;
+      grid-template-columns: 100%;
+
    }
+
+   .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .center {
+       @include md{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;
+       }
+
+    }
+
+    #section-5-together{
+       @include lg{
+          display: grid;
+          grid-template-columns: 40% auto;
+       }
 
      section{
         display: grid;
@@ -19,10 +42,17 @@
          grid-template-columns: 15% auto 15%;
 
         }
+
+        aside{
+         img{
+            width: 100%;
+         }
+      }
+      
   
         #section-5-content{
            grid-area: section-5;
         }
-  }
-  
+      }
+   }
 }

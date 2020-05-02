@@ -3,6 +3,7 @@
 ============= */
 
 #section-3{
+
    
    aside{
       img{
@@ -26,6 +27,10 @@
          display: grid;
          grid-template-columns: 15% auto 15%;
          grid-template-areas: ". section-3 .";
+
+      @include lg{
+         grid-template-columns: 20% auto 20%;
+      }
 
    }
 
