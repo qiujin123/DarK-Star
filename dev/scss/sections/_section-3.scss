@@ -20,5 +20,19 @@
          grid-area: section-3;
       }
 }
+   section{
 
+      @include md{
+         display: grid;
+         grid-template-columns: 15% auto 15%;
+         grid-template-areas: ". section-3 .";
+
+   }
+
+      #section-3-content{
+         @include md{
+            grid-area: section-3;
+         }
+      }
+   }
 }

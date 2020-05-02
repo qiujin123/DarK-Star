@@ -14,6 +14,11 @@
         display: grid;
         grid-template-columns: 15px auto 15px;
         grid-template-areas: ". section-5 .";
+
+        @include md{
+         grid-template-columns: 15% auto 15%;
+
+        }
   
         #section-5-content{
            grid-area: section-5;
