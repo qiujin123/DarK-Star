@@ -2,24 +2,26 @@
     Footer
 ============= */
 
-    footer{
-        display: grid;
-        grid-template-columns: 5% auto 5%;
-        grid-template-areas: ". footer .";
+footer{
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-areas: ". footer .";
+    background-color: #171733;
 
-        #footer-content{
-            grid-area: footer;
-        }
-
-        p {
-            text-align: right;
-    
-        }
-
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 20%;
-          }
+    #footer-content{
+        grid-area: footer;
     }
+
+    p {
+        text-align: right;
+        color: white;
+
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+      }
+}

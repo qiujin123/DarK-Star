@@ -328,6 +328,21 @@ ul {
   ul li {
     list-style: none; }
 
+h3 {
+  font-family: 'Spectral SC';
+  font-size: 40px;
+  color: #171733; }
+
+h2 {
+  font-family: 'Spectral SC';
+  font-size: 50px;
+  color: #171733; }
+
+p {
+  font-family: 'Lato';
+  font-size: 22px;
+  color: #171733; }
+
 /* =============
     Typography
 ============= */
@@ -361,11 +376,13 @@ textarea {
 footer {
   display: grid;
   grid-template-columns: 5% auto 5%;
-  grid-template-areas: ". footer ."; }
+  grid-template-areas: ". footer .";
+  background-color: #171733; }
   footer #footer-content {
     grid-area: footer; }
   footer p {
-    text-align: right; }
+    text-align: right;
+    color: white; }
   footer .center {
     display: block;
     margin-left: auto;
