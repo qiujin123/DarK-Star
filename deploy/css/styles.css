@@ -398,34 +398,53 @@ footer {
 /* =============
    section-2
 ============= */
-@media (min-width: 992px) {
-  #section-2 {
+#section-2 {
+  margin-top: 3%;
+  margin-bottom: 3%; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-2 ."; } }
+  #section-2 #section-2-content {
     display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-5-together ."; } }
-
-@media (min-width: 768px) {
-  #section-2 #section-2-together {
-    grid-area: section-5-together;
-    display: grid;
-    grid-template-columns: 40% auto; } }
-
-@media (min-width: 992px) {
-  #section-2 #section-2-together {
-    grid-area: section-5-together;
-    display: grid;
-    grid-template-columns: 40% auto; } }
-
-#section-2 #section-2-together aside img {
-  width: 100%; }
-
-#section-2 #section-2-together section {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". section-2 ."; }
-  #section-2 #section-2-together section #section-2-content {
-    grid-area: section-2; }
-
+    grid-template-areas: "section-2-text" "section-2-img"; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-content {
+        display: grid;
+        grid-template-columns: 45% auto;
+        grid-template-areas: "section-2-img section-2-text"; } }
+    @media (min-width: 1200px) {
+      #section-2 #section-2-content {
+        grid-area: section-2; } }
+    #section-2 #section-2-content aside {
+      grid-area: section-2-img; }
+      #section-2 #section-2-content aside img {
+        width: 100%; }
+    #section-2 #section-2-content #section-2-right {
+      display: grid;
+      grid-template-columns: 15px auto 15px;
+      grid-template-areas: ". section-2-content .";
+      grid-area: section-2-text; }
+      #section-2 #section-2-content #section-2-right #section-2-right-content {
+        grid-area: section-2-content;
+        text-align: center;
+        margin-bottom: 5%; }
+        @media (min-width: 768px) {
+          #section-2 #section-2-content #section-2-right #section-2-right-content {
+            margin-top: 50%;
+            margin-bottom: 50%;
+            text-align: left; } }
+        @media (min-width: 992px) {
+          #section-2 #section-2-content #section-2-right #section-2-right-content {
+            margin-top: 50%;
+            margin-bottom: 50%;
+            text-align: left; } }
+        @media (min-width: 1200px) {
+          #section-2 #section-2-content #section-2-right #section-2-right-content {
+            margin-top: 50%;
+            margin-bottom: 50%;
+            text-align: left; } }
 /* =============
    section-3
 ============= */
