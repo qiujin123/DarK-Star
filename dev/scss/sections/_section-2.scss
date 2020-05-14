@@ -2,75 +2,75 @@
    section-2
 ============= */
 
-#section-2{
-   
-@include xl{
-   display: grid;
-   grid-template-columns: auto 1200px auto;
-   grid-template-areas: ". section-2 .";
-}
-margin-top: 3%;
-margin-bottom: 3%;
+#section-2 {
 
-
-#section-2-content{
-   display: grid;
-   grid-template-areas:
-   "section-2-text"
-   "section-2-img";
-
-   @include md{
+   @include xl {
       display: grid;
-      grid-template-columns: 45% auto;
-      grid-template-areas: 
-      "section-2-img section-2-text";
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-2 .";
    }
 
-   @include xl{
-      grid-area: section-2;
-   }
+   margin-top: 3%;
+   margin-bottom: 3%;
 
-   aside{
-      grid-area: section-2-img;
-      img{
-         width: 100%;
+
+   #section-2-content {
+      display: grid;
+      grid-template-areas:
+         "section-2-text"
+         "section-2-img";
+
+      @include md {
+         display: grid;
+         grid-template-columns: 45% auto;
+         grid-template-areas:
+            "section-2-img section-2-text";
+      }
+
+      @include xl {
+         grid-area: section-2;
+      }
+
+      aside {
+         grid-area: section-2-img;
+
+         img {
+            width: 100%;
+         }
+      }
+
+      #section-2-right {
+         display: grid;
+         grid-template-columns: 15px auto 15px;
+         grid-template-areas: ". section-2-content .";
+         grid-area: section-2-text;
+
+         #section-2-right-content {
+            grid-area: section-2-content;
+            text-align: center;
+            margin-bottom: 5%;
+
+            @include md {
+               margin-top: 50%;
+               margin-bottom: 50%;
+               text-align: left;
+            }
+
+            @include lg {
+               margin-top: 50%;
+               margin-bottom: 50%;
+               text-align: left;
+            }
+
+            @include xl {
+               margin-top: 50%;
+               margin-bottom: 50%;
+               text-align: left;
+            }
+
+         }
       }
    }
 
-   #section-2-right{
-      display: grid;
-      grid-template-columns: 15px auto 15px;
-      grid-template-areas: ". section-2-content .";
-      grid-area: section-2-text;
-
-      #section-2-right-content{
-         grid-area: section-2-content;
-         text-align: center;
-         margin-bottom: 5%;
-
-         @include md{
-            margin-top: 50%;
-            margin-bottom: 50%;
-            text-align: left;
-         }
-
-         @include lg{
-            margin-top: 50%;
-            margin-bottom: 50%;
-            text-align: left;
-         }
-
-         @include xl{
-            margin-top: 50%;
-            margin-bottom: 50%;
-            text-align: left;
-         }
-         
-      }
-   }
-}
-
 
 }
-
-
