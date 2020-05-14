@@ -367,9 +367,78 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%; }
+  @media (min-width: 992px) {
+    #nav-container ul {
+      display: flex; } }
+  #nav-container ul li {
+    border-bottom: none;
+    padding: 20px 0; }
+    @media (min-width: 992px) {
+      #nav-container ul li {
+        align-items: center;
+        display: flex; } }
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      color: #FABE69;
+      text-decoration: none;
+      transition: 0.25s;
+      font-family: 'Lato';
+      font-size: 18px; }
+      @media (min-width: 992px) {
+        #nav-container ul li a:link,
+        #nav-container ul li a:visited {
+          border-right: 2px solid #000;
+          color: #FABE69;
+          padding: 5px 20px; } }
+    #nav-container ul li a:hover,
+    #nav-container ul li a:active {
+      color: #000; }
+  @media (min-width: 992px) {
+    #nav-container ul li:first-child a {
+      border: none; } }
+  #nav-container ul li:last-child {
+    border: none; }
+    @media (min-width: 992px) {
+      #nav-container ul li:last-child a {
+        border: none; } }
 /* =============
     Header
 ============= */
+header {
+  background-color: #171733;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header > div {
+    display: grid;
+    grid-template-areas: "burger logo" "nav nav";
+    grid-template-columns: auto 80%; }
+    @media (min-width: 992px) {
+      header > div {
+        grid-template-areas: "nav logo";
+        grid-template-columns: auto 20%; } }
+    header > div #burger-container {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #burger-container {
+          display: none !important; } }
+      header > div #burger-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      background-color: #171733;
+      display: none;
+      grid-area: nav;
+      padding: 0 20px 0; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          background-color: #171733;
+          display: block !important; } }
 /* =============
     Footer
 ============= */

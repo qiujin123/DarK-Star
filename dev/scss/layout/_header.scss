@@ -1,3 +1,51 @@
 /* =============
     Header
 ============= */
+header {
+    background-color: #171733;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    >div {
+        display: grid;
+        grid-template-areas: 
+        "burger logo"
+        "nav nav";
+        grid-template-columns: auto 80%;
+
+        @include lg {
+            grid-template-areas: "nav logo";
+            grid-template-columns: auto 20%;
+        }
+
+
+        #burger-container {
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            padding: 20px;
+
+            @include lg {
+                display: none !important;
+            }
+
+            i {
+                cursor: pointer;
+            }
+        }
+
+        #nav-container {
+            background-color: #171733;
+            display: none;
+            grid-area: nav;
+            padding: 0 20px 0;
+
+            @include lg {
+                background-color: #171733;
+                display: block !important;
+            }
+        }
+    }
+}
